@@ -1,0 +1,6 @@
+.HomeScreen_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #feb6f2;
+  overflow: hidden;
+}
