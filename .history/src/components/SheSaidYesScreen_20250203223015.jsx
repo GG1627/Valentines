@@ -93,12 +93,19 @@ const SheSaidYesScreen = () => {
             }}
             initial={{
               opacity: 0,
-              x: Math.random() - window.innerWidth,
+              x:
+                Math.random() * window.innerWidth * 0.8 +
+                window.innerWidth * 0.1, // Distribute across 80% of screen width, offset by 10%
               y: window.innerHeight + 100,
             }}
             animate={{
               opacity: [0, 1, 1, 0],
-              x: Math.random() * window.innerWidth,
+              x: [
+                Math.random() * window.innerWidth * 0.8 +
+                  window.innerWidth * 0.1,
+                Math.random() * window.innerWidth * 0.8 +
+                  window.innerWidth * 0.1,
+              ], // Keep same horizontal distribution but allow slight drift
               y: -100,
             }}
             transition={{

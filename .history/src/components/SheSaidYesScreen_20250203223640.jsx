@@ -93,7 +93,7 @@ const SheSaidYesScreen = () => {
             }}
             initial={{
               opacity: 0,
-              x: Math.random() - window.innerWidth,
+              x: Math.random(),
               y: window.innerHeight + 100,
             }}
             animate={{

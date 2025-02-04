@@ -86,14 +86,14 @@ const SheSaidYesScreen = () => {
           <motion.div
             key={i}
             style={{
-              position: "fixed",
+              position: "relative",
               fontSize: "2rem",
               userSelect: "none",
               pointerEvents: "none",
             }}
             initial={{
               opacity: 0,
-              x: Math.random() - window.innerWidth,
+              x: Math.random() * window.innerWidth,
               y: window.innerHeight + 100,
             }}
             animate={{
